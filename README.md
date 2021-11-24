@@ -12,3 +12,9 @@ The dataset is a table file of the Top 50 Bestselling Books between 2009 and 202
 * Price
 * Year
 * Genre
+
+## [Data Cleaning](https://github.com/VictorUmunna/SQL-Data-Analysis-on-Amazon-Top-50-Best-selling-Books-2009-2020-Dataset./blob/master/data_cleaning.ipynb)
+The whitepaces in the name of some authors were removed inorder for them to match correctly. The cleaned [dataset](https://github.com/VictorUmunna/SQL-Data-Analysis-on-Amazon-Top-50-Best-selling-Books-2009-2020-Dataset./blob/master/amazon_bestsellers.csv) is then analyzed
+
+## [SQL Analysis](https://github.com/VictorUmunna/SQL-Data-Analysis-on-Amazon-Top-50-Best-selling-Books-2009-2020-Dataset./blob/master/Analysis.sql)
+This analysis was made to derive insights from the dataset.
