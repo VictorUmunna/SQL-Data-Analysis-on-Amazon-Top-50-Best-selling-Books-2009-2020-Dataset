@@ -1,4 +1,4 @@
--- THE DATA USED FOR THIS QUERY IS FROM KAGGLE AND IT CONTAINS THE TOP 5O BEST SELLING BOOKS FROM 2009-2020
+-- THE DATA USED FOR THIS QUERY IS FROM KAGGLES AND IT CONTAINS THE TOP 5O BEST SELLING BOOKS FROM 2009-2020
 
 
 -- 1) Author with the highest number of best selling books?
@@ -20,12 +20,13 @@ WHERE author = "Jeff Kinney"
 
 
 -- 3) Most Expensive Best selling Book on Amazon?
-SELECT name, price
+SELECT *
 FROM amazon_bestsellers
 ORDER BY price DESC
 LIMIT 1;
 
--- The Most Expensive Best selling Book is "Diagnostic and Statistical Manual of Mental Disorders, 5th Edition: DSM-5" which costs $105
+-- The Most Expensive Best selling Book is "Diagnostic and Statistical Manual of Mental Disorders, 5th Edition: DSM-5" which costs $105,
+-- it has a 4.5 rating and was released in 2013
 
 
 -- 4) Average price of the best selling books?
@@ -85,7 +86,7 @@ FROM amazon_bestsellers
 
 
 -- 11) The Book with the highest number of reviews
-SELECT name, reviews
+SELECT *
 FROM amazon_bestsellers
 ORDER BY reviews desc
 LIMIT 1
@@ -101,8 +102,9 @@ WHERE reviews = 120727
 -- The book has a user rating of 4.8
 
 
+
 -- 13) The Book with the lowest number of reviews
-SELECT name, reviews
+SELECT *
 FROM amazon_bestsellers
 ORDER BY reviews
 LIMIT 1
@@ -123,3 +125,12 @@ SELECT AVG(reviews)
 FROM amazon_bestsellers
 
 -- The average number of reviews is 13941.73
+
+
+-- 16) The total mumber of reviws in each year?
+SELECT year,SUM(reviews) as total_number_of_reviews
+FROM amazon_bestsellers
+GROUP BY year
+ORDER BY SUM(reviews) DESC
+
+-- 2020 has the most reviews(1790733), followed by 2019(794917) while 2009 has the least (235506)
