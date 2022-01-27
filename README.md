@@ -18,3 +18,6 @@ The whitepaces in the name of some authors were removed inorder for them to matc
 
 ## [SQL Analysis](https://github.com/VictorUmunna/SQL-Data-Analysis-on-Amazon-Top-50-Best-selling-Books-2009-2020-Dataset./blob/master/Analysis.sql)
 This analysis was made to derive insights from the dataset.
+
+## [Tableau Dashboard](https://public.tableau.com/app/profile/victor.umunna/viz/AmazonBestsellers_16431497744210/Dashboard1)
+![Dashboard](https://user-images.githubusercontent.com/58162911/151429443-947be556-89aa-496d-b4c4-59d243fb99da.png)
